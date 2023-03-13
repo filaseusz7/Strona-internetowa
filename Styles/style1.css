@@ -1,0 +1,175 @@
+:root {
+    --blue: #5067EB;
+    --lightblue: #D6EDF1;
+    --violet: #6A5ACD;
+    --green: #9ACD32;
+    --darkblue: #422CFA;
+}
+
+.landingPage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.landingPage-inside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    color: white;
+}
+
+.landingPage-inside h1 {
+    font-size: 30px;
+}
+
+.landingPage-inside button {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: var(--blue);
+}
+
+.landingPage-inside button:hover {
+    color: lightslategrey;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+
+.container{
+    background-color: var(--lightblue);
+    min-height: 100vh;
+}
+
+header, footer{
+    background-color: var(--blue);
+}
+
+header p,
+footer p {
+    text-align: center;
+}
+
+body{
+    font-family: 'OCR A Std', sans-serif;
+    font-size: 17px;
+}
+
+.container-main, footer{
+    margin: 0 10%;
+    width: 70%;
+    padding: 2.5% 5%;
+}
+
+.container,
+footer {
+    text-align: justify;
+}
+
+.container h1 {
+    padding-top: 10px;
+}
+
+.photos {
+    box-shadow: 5px 5px #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blue);
+    max-width: 500px;
+    height: 420px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.zdj1, .zdj2{
+    border-radius: 15px;
+    height: 85%;
+    width: 95%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.photos a{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+.zdj1 {
+    background-image: url(../Images/zdj1.jpg);
+}
+
+.zdj2 {
+    background-image: url(../Images/zdj2.jpg);
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightslategrey;
+}
+
+a:hover {
+    color: var(--violet);
+}
+
+a:active {
+    color: var(--green);
+}
+
+hr {
+    width: 90%;
+}
+
+.list1 {
+    display: flex;
+}
+
+.list1 ul, ol {
+    background-color: #7B96DB;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 41%;
+    margin: 4%;
+    padding: 2% 5%;
+}
+
+.table1 {
+    background-color: #7B96DB;
+    border-radius: 15px;
+    padding: 20px 0 30px;
+    margin: 0 auto;
+    text-align: center;
+    width: 94%;
+}
+
+.table1 table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.table1 th,
+.table1 td {
+    border: 0.5px dotted var(--darkblue);
+}
+
+#zegar {
+    position: relative;
+    left: 900px;
+    bottom: 50px;
+}

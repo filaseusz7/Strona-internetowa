@@ -1,0 +1,131 @@
+header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: var(--blue);
+	height: 8%;
+	padding: 0% 5%;
+	z-index: 1;
+	opacity: 0;
+	transition: .5s;
+}
+
+.logo {
+	color: whitesmoke;
+	position: absolute;
+    left: 10%;
+}
+
+.nav-top {
+	position: absolute;
+	right: 15%;
+	display: flex;
+	justify-content: space-around;
+	width: 300px;
+}
+
+.nav-top a {
+	background-color: var(--darkblue);
+	padding: 3% 3%;
+	border-radius: 15px;
+	text-decoration: none;
+	color: white;
+}
+
+.long a:hover,
+a:hover i {
+    color: blueviolet;
+}
+
+.long a:focus,
+.short a:focus i {
+    color: palevioletred;
+}
+
+.short {
+	display: none;
+}
+
+.short-text {
+	display: none;
+	animation: logoAnimation 2s;
+}
+
+.long-text {
+	animation: logoAnimation 2s;
+}
+
+header p:nth-last-child(1) {
+    display: none;
+}
+
+@media only screen and (max-width:850px) {
+	
+    .logo {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .short-text {
+        position: absolute;
+        display: block;
+        width: 100%;
+    }
+
+    .long-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .long {
+        display: none;
+    }
+
+    .short {
+        display: flex;
+        width: 200px;
+    }
+
+    .short a {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+        padding: 0;
+    }
+
+    .short a i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes logo360Animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo:hover {
+	animation: logo360Animation 2s;
+}
+
+header p:nth-last-child(1) {
+    display: none;
+}

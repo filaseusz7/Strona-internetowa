@@ -1,0 +1,41 @@
+.side-menu-container,
+.side-menu,
+.side-menu>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
+.side-menu-container {
+    position: fixed;
+    height: 100vh;
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s;
+}
+
+.side-menu>a {
+    cursor: pointer;
+    margin: 5px 0px;
+    height: 40px;
+    background-color: var(--darkblue);
+    color: white;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.side-menu>a:hover {
+    margin: 5px 0px;
+    height: 40px;   
+}
+
+.side-menu>a:focus i {
+    color: palevioletred;
+}
+
+.change-menu {
+    opacity: 1;
+}
